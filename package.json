@@ -1,11 +1,11 @@
 {
   "name": "frosttz.dev",
   "version": "1.0.0",
-  "description": "Personal website",
+  "description": "Personal Portfolio website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server public"
+    "start": "live-server --entry-file=public/html/index.html"
   },
   "keywords": [],
   "author": "",
