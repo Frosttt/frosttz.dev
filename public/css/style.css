@@ -1,6 +1,16 @@
-h1 {
-	border: 2px #eee solid;
-	color: brown;
+#name
+{
+	font-size: 24px;
 	text-align: center;
-	padding: 10px;
+	color: blue
+}
+
+body 
+{
+    background-color: lightblue;
+}
+
+link
+{
+	display: block;
 }
