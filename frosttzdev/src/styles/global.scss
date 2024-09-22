@@ -1,0 +1,150 @@
+html {
+  background-image: linear-gradient(to top, #667fe0, #5f93ec, #5fa7f4, #68b9fa, #78cbff);
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80ch;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+  }
+
+  /* nav styles */
+
+  .hamburger 
+  {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger .line 
+  {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #ff9776;
+  }
+
+  .PageControls 
+  {
+    display: flex;
+    justify-content: space-between;     // Space between the elements (hamburger, title, theme icon)
+    align-items: center;                // Vertically center the items
+    position: relative;                 // Allows for absolute positioning of the title
+  
+    .Hamburger 
+    {
+      order: 1;                         // Ensure Hamburger is on the left (default)
+    }
+  
+    h1 
+    {
+      position: absolute;               // Absolutely position the title in the middle
+      left: 50%;                        // Move the title 50% across the container
+      transform: translateX(-50%);      // Shift the title left by 50% of its width for perfect centering
+      margin: 0;
+      font-size: 1.5rem;                // Adjust font size as necessary
+    }
+  
+    .Themeicon 
+    {
+      position:absolute;
+      left: 100%;
+      order: 2;                         // Ensure Theme icon is on the right
+    }
+  }
+.nav-links 
+{
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: #ff9776;
+  display: none;
+  margin: 0;
+}
+
+.href
+{
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: #ffffff;
+  display: none;
+  margin: 0;
+}
+
+
+.nav-links a 
+{
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.nav-links a:focus 
+{
+  background-color: #4751e7;
+}
+
+.expanded 
+{
+  display: unset;
+}
+
+@media screen and (min-width: 636px) 
+{
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  h1 {
+    position: static;                 // Centered flexbox alignment instead of absolute for larger screens
+    transform: none;                  // Remove the transform for flexbox-based centering
+    text-align: center;               // Optional centering
+    flex: 1;                          // Allow h1 to grow and center itself
+  }
+
+}
+
+html.dark {
+  background-image: linear-gradient(to bottom, #314490, #334696, #35489d, #374aa3, #394caa);
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+.themeToggle
+{
+  align-content: right;
+}

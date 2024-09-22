@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Landing from '../layouts/Landing.astro'
+import Greeting from "../components/Greetings"
+const pageTitle = "Frosttz";
+import { Image } from 'astro:assets';
+import profilePhoto from "../pages/images/Frost_crop.png"
+---
+
+<Landing pageTitle={pageTitle}>
+    <body>
+        <div class = profile-box>
+            <div class="profile-photo">
+                <Image src={profilePhoto} alt = "Raccoon" height="300" width="300"/>
+            </div>
+            <h1>Frosttz</h1>       
+        </div>
+    </body>
+</Landing>

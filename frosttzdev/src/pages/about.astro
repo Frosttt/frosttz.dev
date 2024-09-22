@@ -1,0 +1,21 @@
+---
+const pageTitle = "About Me";
+
+const identity = {
+  firstName: "Frost",
+  country: "Canada",
+  occupation: "Game Developer",
+  hobbies: ["Furries", "Programming", "Art"],
+};
+
+const skills = ["C/C++", "Unreal Engine", "JavaScript", "React", "Astro", "Writing Docs"];
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+
+<BaseLayout pageTitle={pageTitle}>
+  <body>
+      <p>Hello! I am frost</p>
+    </body>
+</BaseLayout>
