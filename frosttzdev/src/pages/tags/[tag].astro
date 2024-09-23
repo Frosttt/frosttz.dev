@@ -2,6 +2,7 @@
 // Import necessary types and components
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BlogPost from '../../components/BlogPost.astro';
+import type { MarkdownInstance } from 'astro'; // Import MarkdownInstance
 
 // Define types for post frontmatter and structure
 interface PostFrontmatter 
@@ -10,16 +11,16 @@ interface PostFrontmatter
   tags: string[];
 }
 
-interface Post {
-  url: string;
-  frontmatter: PostFrontmatter;
-}
+
 
 // Define the return type for getStaticPaths
 interface StaticPath {
   params: { tag: string };
   props: { posts: Post[] };
 }
+
+// The MarkdownInstance type represents each markdown post
+type Post = MarkdownInstance<PostFrontmatter>;
 
 export async function getStaticPaths(): Promise<StaticPath[]> {
   const allPosts: Post[] = await Astro.glob('../posts/*.md'); // Type assertion for posts
