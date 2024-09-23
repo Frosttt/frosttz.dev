@@ -1,0 +1,84 @@
+
+
+.main-box
+{
+    align-content: center;
+    background-color: #363a42c7; /* Light grey background */
+    padding: 50px;            /* Padding inside the box */
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+    width: 400px;
+    margin: 0 auto;
+    
+    color: white;
+
+    #title
+    {
+
+        background-image: linear-gradient(to top, #667fe0, #5f93ec, #5fa7f4, #68b9fa, #78cbff);
+        font-family: sans-serif;
+        background-clip: text;            /* Clip the background to the text */
+        -webkit-background-clip: text;    /* For Safari support */
+        color: transparent;                /* Make the text color transparent */
+    }
+
+
+      
+}
+
+.full-page-container {
+    width: 100vw;                 // Full width of the viewport
+    height: 100vh;                // Full height of the viewport
+    background-color: #000000;    // Optional: Background color
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+
+    display: flex;                // Optional: Flexbox for centering content
+    justify-content: center;      // Optional: Center content horizontally
+    align-items: center;          // Optional: Center content vertically
+    margin: 0;                   // Remove default margin
+    padding: 0;                  // Remove default padding
+    box-sizing: border-box;       // Include padding and border in width/height
+  }
+
+
+.content
+{
+    display: block;
+    align-content: center;
+    padding: 0px;
+    ul
+    {
+        padding: 0px;
+        list-style-type: none;
+        
+    }
+    
+
+    .nav-buttons a
+    {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: rgba(228, 210, 210, 0.192);
+        justify-content: space-evenly;
+        border-radius: 5px;       /* Optional: Rounded corners */
+        margin-bottom: 10px;
+        transition: transform .1s;
+        
+    }
+    .nav-buttons a:hover,
+    .navv-buttons a:focus
+    {
+        background-color: #9197ec;
+        background-size: cover;        /* Ensures the background covers the entire box */
+        background-position: center;   /* Centers the background image */
+        size: 30px;
+        transform:scale(1.1)
+    }
+
+}
+

@@ -3,17 +3,46 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Landing from '../layouts/Landing.astro'
 import Greeting from "../components/Greetings"
 const pageTitle = "Frosttz";
+const iconfolder = '../pages/images/'
 import { Image } from 'astro:assets';
 import profilePhoto from "../pages/images/Frost_crop.png"
+import twitterpng from '../pages/images/twitter-logo.svg'
+import itchpng from '../pages/images/itchio-logo.svg'
+import bskysvg from '../pages/images/Bluesky-logo.svg'
+import instasvg from '../pages/images/Instagram_logo.svg'
+
 ---
 
 <Landing pageTitle={pageTitle}>
     <body>
-        <div class = profile-box>
+        <div class = "container">
             <div class="profile-photo">
-                <Image src={profilePhoto} alt = "Raccoon" height="300" width="300"/>
+                <Image src={profilePhoto} alt = "Raccoon" height="300" width="300", class="circular-image"/>
             </div>
-            <h1>Frosttz</h1>       
+            <div id="name">
+                <h1>Frosttz</h1>
+            </div>
+            <div class="content">
+            <h2 id="title">Game Dev</h2>
+            <div></div>
+            <ul class="horizontal-list-social">
+                <li><a href="https://twitter.com/frostttz"><Image src={twitterpng} alt="twitter", height="40", width="40"></Image></a></li>
+                <li><a href="https://itch.io/frosttz"><Image src={itchpng} alt="itch.io" height="40", width="40"></Image></a></li>
+                <li><a href="https://bsky.app/"><Image src={bskysvg} alt="bluesky" height="40", width="40"></Image></a></li>
+                <li><a href="https://instagram.com"><Image src={instasvg} alt="bluesky" height="40", width="40"></Image></a></li>
+
+            </ul>
+
+                <div class="nav-buttons">
+                    <ul>
+                        <li><a href="/about/">About Me</a></li>
+                        <li><a href="/games/">Games</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/gallery/">Gallery</a></li>
+                    </ul>
+                </div>    
+
+            </div>
         </div>
     </body>
 </Landing>

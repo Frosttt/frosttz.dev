@@ -1,5 +1,10 @@
 ---
 import Social from './Social.astro';
+import { Image } from 'astro:assets';
+import twitterpng from '../pages/images/twitter-logo.svg'
+import itchpng from '../pages/images/itchio-logo.svg'
+import bskysvg from '../pages/images/Bluesky-logo.svg'
+import instasvg from '../pages/images/Instagram_logo.svg'
 ---
 <style>
   footer {
@@ -10,7 +15,23 @@ import Social from './Social.astro';
 </style>
 
 <footer>
-  <Social platform="twitter" username="Frostttz" />
-  <Social platform="github" username="Frosttt" />
-  <Social platform="youtube" username="Frostttz" />
+  <p>Copyright Frosttz 2024<p>
+  <div class="social-footer">
+    <ul class="horizontal-list-social">
+      <li>
+        <a href="https://twitter.com/frostttz"><Image src={twitterpng} alt="twitter", height="40", width="40"></Image></a>
+        <Social platform="twitter" username="Frostttz" />
+      </li>
+      <li>
+        <a href="https://itch.io/frosttz"><Image src={itchpng} alt="itch.io" height="40", width="40"></Image></a>
+      </li>
+      <li>
+        <a href="https://bsky.app/"><Image src={bskysvg} alt="bluesky" height="40", width="40"></Image></a>
+      </li>
+      <li>
+        <a href="https://instagram.com"><Image src={instasvg} alt="bluesky" height="40", width="40"></Image></a>
+      </li>
+      <li><Social platform="youtube" username="Frostttz" /></li>
+    </ul>
+  </div>    
 </footer>

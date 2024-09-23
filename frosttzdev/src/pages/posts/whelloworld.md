@@ -10,3 +10,10 @@ tags: ["gamedev", "furry", "learning"]
 Published on: 2024-09-
 
 Test blog 2
+
+```c++
+int main(void)
+{
+    return 0;
+}
+```
