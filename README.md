@@ -1,6 +1,6 @@
-Personal Website
+# Personal Website
 ----
-Frameworks
-Astro
-PreactJS
-SCSS
+## Frameworks
+- Astro
+- PreactJS
+- SCSS
