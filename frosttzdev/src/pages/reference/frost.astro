@@ -1,0 +1,10 @@
+---
+import { Image } from 'astro:assets';
+import PageEmbedding from '../../components/PageEmbedding.astro';
+import refsheet from '../../../public/furry_art/reference_sheet/frost-reference-sheet.png'
+import '../../styles/image.scss'
+---
+<body>
+    <PageEmbedding title="Frost" description="Raccoon Nerd" image="https://i.imgur.com/xttPaUx.jpeg"/>
+    <Image src={refsheet}, alt="Frost Raccoon" id="art"/>
+</body>

@@ -17,6 +17,61 @@ body
 
 }
 
+// Header
+header
+{
+  width: 100%;
+  margin: auto;
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;               // Apply Flexbox to header
+  justify-content: center;      // Center the content horizontally
+  align-items: center;          // Center vertically if needed
+  padding: 20px 0;              // Add padding to the top and bottom for spacing
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly; // Ensure items are spaced evenly in the nav
+    width: 80%;                   // Set the width to control overall size of the menu
+    padding: 0;
+    margin: 0;                    // Remove extra margins
+  }
+
+  li {
+    text-align: center;
+  }
+
+  .nav-links a 
+  {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;           // Add padding around the link text
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform .1s
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus 
+  {
+    background-color: #4751e7;
+    transform:scale(1.2);
+  }
+
+  
+
+  /* selected link */
+a:active {
+  color: rgb(255, 255, 255);
+}
+}
+
+// Footer
 footer
 {
   margin: auto;
@@ -255,22 +310,7 @@ a:active {
   }
 
 
-.nav-links a 
-{
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
 
-.nav-links a:hover,
-.nav-links a:focus 
-{
-  background-color: #4751e7;
-}
 
 .expanded 
 {
