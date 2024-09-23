@@ -1,14 +1,14 @@
 ---
 import Hamburger  from './Hamburger.astro';
 import Navigation from './Navigation.astro';
+import PageEmbedding from './PageEmbedding.astro';
 import Themeicon from './ThemeIcon.astro';
 ---
 <header>
+  <PageEmbedding/>
   <nav>
     <div class="PageControls">
-      <Hamburger />
       <a href="/">Frosttz.dev</a>
-      <Themeicon />
     </div>
     <Navigation />
   </nav>

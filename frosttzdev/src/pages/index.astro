@@ -1,9 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Landing from '../layouts/Landing.astro'
+import Landing from '../layouts/LandingLayout.astro'
 import Greeting from "../components/Greetings"
 const pageTitle = "Frosttz";
 const iconfolder = '../../public/images'
+import PageEmbedding from '../components/PageEmbedding.astro';
 import { Image } from 'astro:assets';
 import profilePhoto from "../../public/images/Frost_crop.png"
 import twitterpng from '../../public/images/twitter-logo.svg'
@@ -14,6 +15,7 @@ import instasvg from '../../public/images/instagram-logo.svg'
 ---
 
 <Landing pageTitle={pageTitle}>
+    <PageEmbedding/>
     <body>
         <div class = "container">
             <div class="profile-photo">
@@ -30,13 +32,12 @@ import instasvg from '../../public/images/instagram-logo.svg'
                 <li><a href="https://itch.io/frosttz"><Image src={itchpng} alt="itch.io" height="40", width="40"></Image></a></li>
                 <li><a href="https://bsky.app/"><Image src={bskysvg} alt="bluesky" height="40", width="40"></Image></a></li>
                 <li><a href="https://instagram.com"><Image src={instasvg} alt="bluesky" height="40", width="40"></Image></a></li>
-
             </ul>
 
                 <div class="nav-buttons">
                     <ul>
                         <li><a href="/about/">About Me</a></li>
-                        <li><a href="/games/">Games</a></li>
+                        <li><a href="/games/">Projects</a></li>
                         <li><a href="/blog/">Blog</a></li>
                         <li><a href="/gallery/">Gallery</a></li>
                     </ul>

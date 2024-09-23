@@ -1,17 +1,24 @@
 html 
 {
     //background-image: linear-gradient(to top, #667fe0, #5f93ec, #5fa7f4, #68b9fa, #78cbff);
-    background-color: rgb(178, 219, 252);
+    //background-color: rgb(178, 219, 252);
+    background-color: rgb(5, 4, 14);
       font-family: sans-serif;
+    color: white
 }
 
 body 
 {
+    display: grid;
     margin: auto;
-    width: 100%;
-    max-width: 80ch;
-    padding: 1rem;
-    line-height: 1.5;
+
+}
+
+footer
+{
+  margin: auto;
+  display:block;
+
 }
   
   * {
@@ -29,9 +36,29 @@ h1
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #e6e6e6;
+  color: #ffffff;
   display: none;
   margin: 0;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: rgb(123, 218, 255);
 }
 
 .container
@@ -40,7 +67,7 @@ h1
     background-color: #363a42c7; /* Light grey background */
     padding: 50px;            /* Padding inside the box */
     border: 1px solid #5bebeb;    /* Optional: A light border to define the box */
-    border-radius: 10px;       /* Optional: Rounded corners */
+    border-radius: 0px;       /* Optional: Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
     width: 400px;
     margin: 0 auto;
@@ -166,7 +193,7 @@ h1
     .nav-buttons a:hover,
     .navv-buttons a:focus
     {
-        background-color: #a5aaee;
+        background-color: #8ab5f5;
         background-size: cover;        /* Ensures the background covers the entire box */
         background-position: center;   /* Centers the background image */
         size: 30px;
