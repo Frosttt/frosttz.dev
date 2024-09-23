@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import '../styles/wip.scss'
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import WIPpic from '../../public/furry_art/Frost_HappyRaccoons_Crumpled.png'
+---
+
+<BaseLayout pageTitle="WIP">
+    <body>
+        <div class="wipcontents">
+        <h1>WIP</h1>
+        <a href="/"><Image src={WIPpic} alt="frost is crying ;-;" id="wippic"></Image></a>
+        <h2>This page is still a WIP</h2>
+        <a href="/">Click me to go back</p></a>
+    </div>
+    </body>
+</BaseLayout>

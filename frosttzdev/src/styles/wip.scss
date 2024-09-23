@@ -1,0 +1,28 @@
+
+.wipcontents
+{
+    margin: auto;
+    text-align: center;
+}
+
+#wippic
+{
+    margin: auto;
+    width: 75%; /* Scales the image to 50% of its container's width */
+    height: auto; /* Keeps the aspect ratio */
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+#wippic:hover
+{
+    animation: shake-rotate 0.5s ease-in-out; /* Animation lasts for 0.5 seconds */
+    animation-iteration-count: 1; /* Shake only once per hover */
+}
+
+/* Keyframes for the shake animation */
+@keyframes shake-rotate {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+  }

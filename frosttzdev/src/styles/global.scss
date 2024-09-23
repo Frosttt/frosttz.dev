@@ -1,8 +1,11 @@
 html 
 {
-    //background-image: linear-gradient(to top, #667fe0, #5f93ec, #5fa7f4, #68b9fa, #78cbff);
+  background: rgb(25,32,65);
+  background: linear-gradient(0deg, rgba(25,32,65,1) 0%, rgba(47,47,152,1) 29%, rgba(42,132,161,1) 100%);
+  background-size: cover; /* Make sure the background covers the entire viewport */
+  background-attachment: fixed; /* Ensures the gradient stays fixed even on scroll */
     //background-color: rgb(178, 219, 252);
-    background-color: rgb(5, 4, 14);
+    //background-color: rgb(47, 42, 90);
       font-family: sans-serif;
     color: white
 }
