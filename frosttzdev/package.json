@@ -1,0 +1,23 @@
+{
+  "name": "frosttzdev",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.3",
+    "@astrojs/preact": "^3.5.3",
+    "@astrojs/rss": "^4.0.7",
+    "astro": "^4.15.8",
+    "preact": "^10.24.0",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.79.3"
+  }
+}

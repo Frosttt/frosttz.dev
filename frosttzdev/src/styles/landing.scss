@@ -1,0 +1,48 @@
+
+
+  
+.container
+{
+
+
+    #name
+    {
+
+        background-image: linear-gradient(to top, #667fe0, #5f93ec, #5fa7f4, #68b9fa, #78cbff);
+        font-family: sans-serif;
+        background-clip: text;            /* Clip the background to the text */
+        -webkit-background-clip: text;    /* For Safari support */
+        color: transparent;                /* Make the text color transparent */
+        padding: 0;
+        margin: 0;
+    }
+
+    #title
+    {
+        font-family: sans-serif;
+        background-clip: text;            /* Clip the background to the text */
+        -webkit-background-clip: text;    /* For Safari support */
+        color: white;                /* Make the text color transparent */
+        padding: 0;
+        margin: 0;
+    }
+
+
+      
+}
+
+
+
+
+@media screen and (min-width: 850px) 
+{
+    .container
+    {
+    
+        min-width: 800px;
+          
+    }
+
+
+
+}

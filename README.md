@@ -1,2 +1,0 @@
-# frosttz.dev
-Personal website
