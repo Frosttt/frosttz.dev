@@ -7,6 +7,7 @@ const iconfolder = '../../public/images'
 import PageEmbedding from '../components/PageEmbedding.astro';
 import { Image } from 'astro:assets';
 import profilePhoto from "../../public/images/Frost_crop.png"
+import bannerPhoto from "../../public/furry_art/Frost_Kuttoyaki_Busstop.png"
 import twitterpng from '../../public/images/twitter-logo.svg'
 import itchpng from '../../public/images/itchio-logo.svg'
 import bskysvg from '../../public/images/bluesky-logo.svg'
@@ -14,9 +15,10 @@ import instasvg from '../../public/images/instagram-logo.svg'
 
 ---
 
-<Landing pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle}>
     <PageEmbedding/>
     <body>
+        <Image src={bannerPhoto} alt = "Frost waiting for bus" width="1920" height="1080"/>
         <div class = "container">
             <div class="profile-photo">
                 <Image src={profilePhoto} alt = "Raccoon" height="300" width="300", class="circular-image"/>
@@ -36,7 +38,7 @@ import instasvg from '../../public/images/instagram-logo.svg'
 
                 <div class="nav-buttons">
                     <ul>
-                        <li><a href="/wip/">About Me</a></li>
+                        <li><a href="/about/">About Me</a></li>
                         <li><a href="/wip/">Projects</a></li>
                         <li><a href="/wip/">Blog</a></li>
                         <li><a href="/wip/">Art</a></li>
@@ -46,4 +48,4 @@ import instasvg from '../../public/images/instagram-logo.svg'
             </div>
         </div>
     </body>
-</Landing>
+</BaseLayout>
