@@ -1,16 +1,19 @@
 ---
+import Landing from '../layouts/LandingLayout.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Landing from '../layouts/LandingLayout.astro'
 import Greeting from "../components/Greetings"
 const pageTitle = "Frosttz";
 const iconfolder = '../../public/images'
 import PageEmbedding from '../components/PageEmbedding.astro';
 import { Image } from 'astro:assets';
 import profilePhoto from "../../public/images/Frost_crop.png"
-import twitterpng from '../../public/images/twitter-logo.svg'
-import itchpng from '../../public/images/itchio-logo.svg'
-import bskysvg from '../../public/images/bluesky-logo.svg'
-import instasvg from '../../public/images/instagram-logo.svg'
+import bannerPhoto from "../../public/furry_art/Frost_Kuttoyaki_Busstop.png"
+import twitterpng from '../../public/images/twitter.svg'
+import itchpng from '../../public/images/itchdotio-color.svg'
+import bskysvg from '../../public/images/bluesky-color.svg'
+import instasvg from '../../public/images/instagram-color.svg'
+import twitchsvg from '../../public/images/twitch-color.svg'
+
 
 ---
 
@@ -19,31 +22,38 @@ import instasvg from '../../public/images/instagram-logo.svg'
     <body>
         <div class = "container">
             <div class="profile-photo">
-                <Image src={profilePhoto} alt = "Raccoon" height="300" width="300", class="circular-image"/>
+                <a href="/about/"><Image src={profilePhoto} alt = "Raccoon" height="300" width="300", class="circular-profile-image"/></a>
             </div>
-            <div id="name">
-                <h1>Frosttz</h1>
-            </div>
+            <div class="intro-text">
+                <div id="name">
+                    <h1>Frosttz</h1>
+                </div>
+                <h2 id="title">Raccoon Game Dev</h2>
+            </div> 
             <div class="content">
-            <h2 id="title">Raccoon Game Dev</h2>
-            <div></div>
-            <ul class="horizontal-list-social">
-                <li><a href="https://twitter.com/frostttz"><Image src={twitterpng} alt="twitter", height="40", width="40"></Image></a></li>
-                <li><a href="https://itch.io/frosttz"><Image src={itchpng} alt="itch.io" height="40", width="40"></Image></a></li>
-                <li><a href="https://bsky.app/profile/frosttz.dev"><Image src={bskysvg} alt="bluesky" height="40", width="40"></Image></a></li>
-                <li><a href="https://instagram.com"><Image src={instasvg} alt="bluesky" height="40", width="40"></Image></a></li>
-            </ul>
-
+                <ul class="horizontal-list-social">
+                    <li><a href="https://twitter.com/frostttz"><Image src={twitterpng} alt="twitter", height="40", width="40"></Image></a></li>
+                    <li><a href="https://itch.io/frosttz"><Image src={itchpng} alt="itch.io" height="40", width="40"></Image></a></li>
+                    <li><a href="https://bsky.app/profile/frosttz.dev"><Image src={bskysvg} alt="bluesky" height="40", width="40"></Image></a></li>
+                    <li><a href="https://www.instagram.com/frostttz/"><Image src={instasvg} alt="bluesky" height="40", width="40"></Image></a></li>
+                    <li><a href="https://www.twitch.tv/frostttz"><Image src={twitchsvg} alt="twitch" height="40", width="40"></Image></a></li>
+                </ul>
                 <div class="nav-buttons">
                     <ul>
-                        <li><a href="/wip/">About Me</a></li>
                         <li><a href="/wip/">Projects</a></li>
                         <li><a href="/wip/">Blog</a></li>
                         <li><a href="/wip/">Art</a></li>
                     </ul>
                 </div>    
-
             </div>
         </div>
+        <div class="copyright-footer"><p>Copyright Frosttz 2024<p></p></div>
     </body>
 </Landing>
+
+<style>
+    .copyright-footer
+    {
+        text-align: center;
+    }
+</style>

@@ -1,10 +1,11 @@
 ---
 import Social from './Social.astro';
 import { Image } from 'astro:assets';
-import twitterpng from '../../public/images/twitter-logo.svg'
-import itchpng from '../../public/images/itchio-logo.svg'
-import bskysvg from '../../public/images/bluesky-logo.svg'
-import instasvg from '../../public/images/instagram-logo.svg'
+import twitterpng from '../../public/images/twitter.svg'
+import itchpng from '../../public/images/itchdotio-color.svg'
+import bskysvg from '../../public/images/bluesky-color.svg'
+import instasvg from '../../public/images/instagram-color.svg'
+import twitchsvg from '../../public/images/twitch-color.svg'
 ---
 <style>
   footer {
@@ -29,6 +30,9 @@ import instasvg from '../../public/images/instagram-logo.svg'
       </li>
       <li>
         <a href="https://instagram.com"><Image src={instasvg} alt="bluesky" height="40", width="40"></Image></a>
+      </li>
+      <li>
+        <a href="https://www.twitch.tv/frostttz"><Image src={twitchsvg} alt="twitch" height="40", width="40"></Image></a>
       </li>
     </ul>
   </div>    
