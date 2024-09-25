@@ -1,13 +1,13 @@
 html 
 {
-  background: white;
+  background: rgb(20, 22, 32);
   //background: linear-gradient(0deg, rgba(25,32,65,1) 0%, rgba(47,47,152,1) 29%, rgba(42,132,161,1) 100%);
   background-size: cover; /* Make sure the background covers the entire viewport */
   background-attachment: fixed; /* Ensures the gradient stays fixed even on scroll */
-    //background-color: rgb(178, 219, 252);
-    //background-color: rgb(47, 42, 90);
-      font-family: sans-serif;
-    color: rgb(0, 0, 0)
+  //background-color: rgb(178, 219, 252);
+  //background-color: rgb(47, 42, 90);
+  font-family: sans-serif;
+  color: rgb(255, 255, 255)
 }
 
 body 
@@ -17,58 +17,35 @@ body
 
 }
 
+.background-img
+{
+  display: inline;
+}
+
 // Header
 .page-header
 {
-  display: flex;               // Apply Flexbox to header
-  justify-content: center;      // Center the content horizontally
-  align-items: center;          // Center vertically if needed
+
+
+  //align-items: center;          // Center vertically if needed
   //padding: 20px 0;              // Add padding to the top and bottom for spacing
   background-color: black;
+  transform:scale(1.2);
 
   ul {
+    
     display: flex;
     list-style-type: none;
     justify-content: space-evenly; // Ensure items are spaced evenly in the nav
-    width: 80%;                   // Set the width to control overall size of the menu
-    padding: 0;
     margin: 0;                    // Remove extra margins
+
   }
 
   li {
     text-align: center;
   }
 
-  // Hover 
-
-
-  .nav-links a 
-  {
-    width: 100%;
-    margin: auto;
-    background-color: black;
-    background-size: cover;
-    background-attachment: fixed;
-  
-    list-style-type: none;
-    display: block;
-    text-align: center;
-    padding: 10px 15px;           // Add padding around the link text
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: transform .1s;
-  }
-
-  .nav-links a:hover,
-  .nav-links a:focus 
-  {
-    background-color: #4751e7;
-    transform:scale(1.2);
-  }
-
-
+ 
 
   /* selected link */
 a:active {
@@ -128,7 +105,7 @@ a:active {
 {
     align-content: center;
     background-color: #131418; /* Light grey background */
-    padding: 50px;            /* Padding inside the box */
+    padding: 50px 0px 50px 0px;            /* Padding inside the box */
     border: 1px solid #5bebeb;    /* Optional: A light border to define the box */
     border-radius: 0px;       /* Optional: Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
@@ -209,16 +186,29 @@ a:active {
     }
   }
 
+  .profile-photo
+  {
+      
+    .circular-profile-image
+      {
+        width: 300px;                  /* Set a specific width */
+        height: 300px;                 /* Set the same height for a perfect circle */
+        border-radius: 50%;            /* Make the image circular */
+        border: 3px solid #6eb3ec;    /* Optional: A light border to define the box */
+        //background-image: linear-gradient(to top, #667fe0, #5f93ec, #5fa7f4, #68b9fa, #78cbff) ;
 
-  .circular-image {
-    width: 300px;                  /* Set a specific width */
-    height: 300px;                 /* Set the same height for a perfect circle */
-    border-radius: 50%;            /* Make the image circular */
-    border: 3px solid #6eb3ec;    /* Optional: A light border to define the box */
-    //background-image: linear-gradient(to top, #667fe0, #5f93ec, #5fa7f4, #68b9fa, #78cbff) ;
+        object-fit: cover;             /* Maintain aspect ratio and cover the area */
+        transition: transform .1s;
+      }
 
-    object-fit: cover;             /* Maintain aspect ratio and cover the area */
+      .circular-profile-image:hover
+      {
+          transform:scale(1.1)
+      }
   }
+  
+ 
+
 
 .content
 {
@@ -248,7 +238,7 @@ a:active {
         text-transform: uppercase;
         background-color: rgba(0, 0, 0, 0.192);
         justify-content: space-evenly;
-        border-radius: 5px;       /* Optional: Rounded corners */
+        border-radius: 0px;       /* Optional: Rounded corners */
         margin-bottom: 10px;
         transition: transform .1s;
         
@@ -264,6 +254,8 @@ a:active {
     }
 
 }
+
+
 
 
 

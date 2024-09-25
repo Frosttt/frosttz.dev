@@ -1,0 +1,35 @@
+.nav-links
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    
+}
+
+.nav-links a 
+{
+    width: 20%;
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+  list-style-type: none;
+  display: block;
+  text-align: center;
+  padding: 10px 15px;           // Add padding around the link text
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform .1s;
+  
+}
+
+.nav-links a:hover,
+.nav-links a:focus 
+{
+  background-color: #8ab5f5;
+  //background-color: #4751e7;
+  transform:scale(1.2);
+}
+

@@ -1,6 +1,6 @@
 ---
+import Landing from '../layouts/LandingLayout.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Landing from '../layouts/LandingLayout.astro'
 import Greeting from "../components/Greetings"
 const pageTitle = "Frosttz";
 const iconfolder = '../../public/images'
@@ -15,37 +15,42 @@ import instasvg from '../../public/images/instagram-logo.svg'
 
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<Landing pageTitle={pageTitle}>
     <PageEmbedding/>
     <body>
-        <Image src={bannerPhoto} alt = "Frost waiting for bus" width="1920" height="1080"/>
         <div class = "container">
             <div class="profile-photo">
-                <Image src={profilePhoto} alt = "Raccoon" height="300" width="300", class="circular-image"/>
+                <a href="/about/"><Image src={profilePhoto} alt = "Raccoon" height="300" width="300", class="circular-profile-image"/></a>
             </div>
-            <div id="name">
-                <h1>Frosttz</h1>
-            </div>
+            <div class="intro-text">
+                <div id="name">
+                    <h1>Frosttz</h1>
+                </div>
+                <h2 id="title">Raccoon Game Dev</h2>
+            </div> 
             <div class="content">
-            <h2 id="title">Raccoon Game Dev</h2>
-            <div></div>
-            <ul class="horizontal-list-social">
-                <li><a href="https://twitter.com/frostttz"><Image src={twitterpng} alt="twitter", height="40", width="40"></Image></a></li>
-                <li><a href="https://itch.io/frosttz"><Image src={itchpng} alt="itch.io" height="40", width="40"></Image></a></li>
-                <li><a href="https://bsky.app/profile/frosttz.dev"><Image src={bskysvg} alt="bluesky" height="40", width="40"></Image></a></li>
-                <li><a href="https://instagram.com"><Image src={instasvg} alt="bluesky" height="40", width="40"></Image></a></li>
-            </ul>
-
+                <ul class="horizontal-list-social">
+                    <li><a href="https://twitter.com/frostttz"><Image src={twitterpng} alt="twitter", height="40", width="40"></Image></a></li>
+                    <li><a href="https://itch.io/frosttz"><Image src={itchpng} alt="itch.io" height="40", width="40"></Image></a></li>
+                    <li><a href="https://bsky.app/profile/frosttz.dev"><Image src={bskysvg} alt="bluesky" height="40", width="40"></Image></a></li>
+                    <li><a href="https://www.instagram.com/frostttz/"><Image src={instasvg} alt="bluesky" height="40", width="40"></Image></a></li>
+                </ul>
                 <div class="nav-buttons">
                     <ul>
-                        <li><a href="/about/">About Me</a></li>
                         <li><a href="/wip/">Projects</a></li>
                         <li><a href="/wip/">Blog</a></li>
                         <li><a href="/wip/">Art</a></li>
                     </ul>
                 </div>    
-
             </div>
         </div>
+        <div class="copyright-footer"><p>Copyright Frosttz 2024<p></p></div>
     </body>
-</BaseLayout>
+</Landing>
+
+<style>
+    .copyright-footer
+    {
+        text-align: center;
+    }
+</style>
