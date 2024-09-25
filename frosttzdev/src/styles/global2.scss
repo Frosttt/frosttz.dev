@@ -145,6 +145,27 @@ a:active {
 }
 
 
+.text-content
+{
+  margin: 10%;
+  font-size: 1.2rem;
+}
+.site-container
+{
+    
+    align-content: center;
+    background-color: #131418; /* Light grey background */
+    padding: 50px 0px 50px 0px;            /* Padding inside the box */
+    border: 1px solid #5bebeb;    /* Optional: A light border to define the box */
+    border-radius: 0px;       /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+    width: 50%;
+    margin: 0 auto;
+    
+    color: white;
+    text-align: center;
+}
+
 .horizontal-list
  {
     display: flex;                   // Use flexbox for layout
@@ -169,6 +190,8 @@ a:active {
     justify-content: space-evenly;
     padding: 0;                     // Remove default padding
     margin: 0;                      // Remove default margin
+    fill: white;
+    stroke: white;
   
     li {
       margin-right: 20px;           // Optional: space between items
