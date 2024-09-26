@@ -109,7 +109,7 @@ a:active {
     border: 1px solid #5bebeb;    /* Optional: A light border to define the box */
     border-radius: 0px;       /* Optional: Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
-    width: 400px;
+    width: 550px;
     margin: 0 auto;
     
     color: white;
@@ -159,7 +159,7 @@ a:active {
     border: 1px solid #5bebeb;    /* Optional: A light border to define the box */
     border-radius: 0px;       /* Optional: Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
-    width: 50%;
+    width: 800px;
     margin: 0 auto;
     
     color: white;
@@ -273,7 +273,7 @@ a:active {
         background-size: cover;        /* Ensures the background covers the entire box */
         background-position: center;   /* Centers the background image */
         size: 30px;
-        transform:scale(1.1)
+        transform:scale(1.05)
     }
 
 }
