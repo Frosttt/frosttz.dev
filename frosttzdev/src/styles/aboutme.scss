@@ -4,6 +4,22 @@
     width: 50%;
 }
 
+.text-content 
+{
+    .AboutHeader ul 
+    {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .job-div ul 
+    {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+}
 
 @media screen and (min-width: 850px) 
 {

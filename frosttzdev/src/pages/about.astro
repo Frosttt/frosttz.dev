@@ -13,28 +13,41 @@ const skills = ["C/C++", "Unreal Engine", "JavaScript", "React", "Astro", "Writi
 
 
 import BaseLayout from '../layouts/BaseLayout.astro';
+
 ---
 
 
 <BaseLayout pageTitle={pageTitle}>
   <body>
     <div class="site-container">
-    <h1>About me</h1>
-    <img src="https://i.imgur.com/OBnkX7Z.gif" alt="Descriptive text of the GIF", id="aboutmephoto" />
+    <img src="https://frosttz-dev-furry-frost.s3.us-west-2.amazonaws.com/Frost_Efi_Programming_final.png" alt="Frost coding drawn by @EfiArts on twitter", id="aboutmephoto" />
+    <p>Artist: Efi_Arts</p>
     <div class="text-content">
-        <p>
-          Hello! I'm Frosttz, but you can just call me Frost. I'm a raccoon who loves to program and draw. I work as a game developer over in Seattle 
-          and you'll find me working on indie games. I currently work at a porting studio called <a href="https://www.playeveryware.com/">PlayEveryWare</a>.
-          My job mostly consists of taking video games and putting them on consoles like the Xbox, Playstation, and Switch. Most of my experience
-          is with Unreal Engine, but I love doing hobby development on Godot.
-        </p>
-        <p>
-          I went to Digipen Institute of Technology and graduated with a Bachelors of Science in Computer Science and Game Design.
-          Notable games I worked on is my senior project <a href="https://store.steampowered.com/app/2417620/Pogglewash/">Pogglewash</a>, Fortnite for an Internship at Epic Games, and my most recent port of <a href="https://store.steampowered.com/app/1874490/Potionomics/">Potionomics</a> for console!
-        </p>
-        <p>
-          I'll write a better bio later lol...
-        </p>
+      <div class = "AboutHeader">
+        <h1> Hi I'm Frost</h1>
+        <ul>
+          <li>My actual name is Chris Dowell</li>
+          <li>My alias is "Frosttz" or Frost</li>
+          <li>I'm a furry and my fursona is a raccoon</li>
+          <li>I like programming and drawing.</li>
+          <li>I work as a software engineer at an indie game studio :3</li>
+        </ul>
+      </div>
+      <div class = "">
+        <h2>Experience</h2>
+        <div = class = "job-div">
+          <h3>Currently working at: PlayEveryWare</h3>
+          <h3>Shipped Games</h3>
+          <ul><h4>Potionomics</h4><img src="https://potionomics.com/_next/static/media/hero-tablet.e2b50b00.jpg" height = "300" width="400"></ul>
+          <p>Ported to Xbox Series X, Playstation 5, and Nintendo Switch</p>
+          <p>September 2023 to May 2024</p>
+          <ul><h4>Fortnite</h4><img src="../../public/images/fortnite_splash.jpg" height = "300" width="400">
+            <p>Gameplay Programming Internship</p>
+          <p>Summer 2022</p></ul>
+
+          <ul></ul>
+      </div>
+      </div>
     </div>
     </div>
     </body>
